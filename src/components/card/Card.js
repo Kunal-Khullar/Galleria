@@ -3,26 +3,39 @@ import Row from 'react-bootstrap/Row'
 import Button from 'react-bootstrap/Button'
 import './Card.css'
 const Card = (props) => {
+    const [showQR, setShowQR] = useState(false);
     const flipCard = (id) => {
-        console.log(id)
-        id = "#" + id
-        var card = document.querySelector(id);
-        card.classList.toggle('is-flipped');
+        id ? id = 0 : id = 1;
+
+        return id
     }
 
 
     return <>
         <div className="row allcards">
             {props && props.data.length != 0 && props.data.map((ele, i) => {
-                console.log("hello")
+                console.log(ele.id);
                 return (
 
                     <div className="cardContainer">
                         <div className="itemcards front">
                             <div className="scene">
-                                <div className="card" id={ele.id} onClick={() => { flipCard(ele.id) }} >
-                                    <div className="itemImage card__face card__face--front"></div>
-                                    <div className="back card__face card__face--back"></div>
+                                <div className="card" id={ele.id} onClick={() => { ele.id = flipCard(ele.id); setShowQR(!showQR); }} >
+                                    {ele.id == 0 ? (<img src={ele.url} style={{
+                                        height: "25rem",
+                                        width: "100%"
+                                    }}></img>) : (<img src={ele.image} style={{
+                                        height: "25rem",
+                                        width: "100%"
+                                    }}></img>)}
+                                    {/* <div style={{
+                                        backgroundImage: `url(${ele.image})`,
+                                        backgroundSize: "cover",
+                                        height: "auto",
+                                        backgroundPosition: 'center',
+
+                                    }}></div> */}
+
                                 </div>
                             </div>
                             <div className="details">
