@@ -26,7 +26,7 @@ const HomeDecor = () => {
     }
     if (loading) {
         console.log("here")
-        return <div><h1>LOADING</h1></div>
+        return <div><h1 className="loader">LOADING</h1></div>
     }
     //  const data = [{ itemName: "Chair", price: "Rs3000", shop: "XYZ", owner: "name", phone: "2131312312312", dimension: "3x5cm" }, { itemName: "Chair", price: "Rs3000", shop: "XYZ", owner: "name", phone: "2131312312312", dimension: "3x5cm" }, { itemName: "Chair", price: "Rs3000", shop: "XYZ", owner: "name", phone: "2131312312312", dimension: "3x5cm" }]
 

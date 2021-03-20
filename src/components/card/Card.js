@@ -64,7 +64,7 @@ const Card = (props) => {
                                     <h2 className="c4">{ele.dimension}</h2>
                                 </Row>
                                 <Row className="r1">
-                                    <h2 className="c3 i1">Rs{ele.price}</h2>
+                                    <h2 className="c3 i1">Rs {ele.price}</h2>
                                     <Button className="mybtn btn-success">Purchase</Button>
                                 </Row>
                             </div>

@@ -7,6 +7,9 @@
   transition: color ease-in 600ms !important;
   transition: background-color 700ms ease-in !important;
 }
+#mainNav{
+  padding: 0 !important;
+}
 .navbar-nav {
   /* margin-top: 0.5rem; */
   margin-left: 25rem !important;
@@ -57,24 +60,30 @@
   background-color: #eee;
   margin-top: 0px;
 }
+#logo{
+  width:10rem;
+  height:5rem;
+  /* height:2rem; */
+  transform: scale(0.7)
+}
 @keyframes waves {
   from {
-    color: #fb3017;
-    opacity: 0.9;
+    color: #510;
+    opacity: 0.8;
   }
   to {
-    color: #111;
+    color: #333;
     opacity: 1;
   }
 }
 @keyframes waves2 {
   from {
-    color: #111;
+    color: #311;
     opacity: 1;
   }
   to {
-    color: #fb3017;
-    opacity: 0.9;
+    color: #500;
+    opacity: 0.8;
   }
 }
 #p1 {

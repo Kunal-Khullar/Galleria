@@ -23,7 +23,7 @@ const NavbarMain = () => {
 
         <Navbar fixed="top" id="mainNav" expand="lg" className={colorChange ? 'scroll' : ''}>
             <Navbar.Brand id="navlogo" href="/">
-                Galleria
+                <img id="logo" src="https://cdn.discordapp.com/attachments/820318378823909417/822940069399625759/s.png" alt=""></img>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
