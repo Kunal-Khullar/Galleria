@@ -7,6 +7,12 @@ Firestore
 Firebase Storage
 EchoAR
 
+# Links
+
+Video: https://youtu.be/Ksb6qPR1VUE
+
+Website: https://galleria-mart.web.app
+
 # Future scope
 
 It can also be used for used-items where user can upload pictures of his product and we will create AR model from those pictures.
