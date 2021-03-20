@@ -1,29 +1,27 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import Row from 'react-bootstrap/Row'
 import Button from 'react-bootstrap/Button'
 import './Card.css'
 const Card = (props) => {
-    const flipCard = (id)=>{
+    const flipCard = (id) => {
         var card = document.querySelector(id);
         card.classList.toggle('is-flipped');
     }
-    const [temp,setTemp] = useState(props.data);
-    if(props.data){
-      console.log("ez")
-    }
+
+
     return <>
         <div className="row allcards">
-            {temp.length!=0&temp.map((ele, i) => {
-                    console.log("hello")
+            {props && props.data.length != 0 && props.data.map((ele, i) => {
+                console.log("hello")
                 return (
-                    
+
                     <div className="cardContainer">
                         <div className="itemcards front">
                             <div className="scene">
-                            <div className="card" id={ele.id} >
-                            <div className="itemImage card__face card__face--front"></div>
-                            <div className="back card__face card__face--back"></div>
-                            </div>
+                                <div className="card" id={ele.id} >
+                                    <div className="itemImage card__face card__face--front"></div>
+                                    <div className="back card__face card__face--back"></div>
+                                </div>
                             </div>
                             <div className="details">
                                 <h2 className="itemName">{ele.title}</h2>
@@ -50,7 +48,7 @@ const Card = (props) => {
                             </div>
 
                         </div>
-                        
+
                     </div>
 
                 )
