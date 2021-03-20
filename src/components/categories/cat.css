@@ -1,49 +1,9 @@
-.title{
-    font-size: 5rem;
-    margin-top: 1rem;
-    text-align: center;
-    font-family: monospace;
-    /* text-decoration: blink; */
-    color: #500;
-    text-shadow: 1px 1px 5px;
-}
-.cardContainer
-{
-    width: 35%;
-    margin-left: 10%;
-    
-    margin-top: 2rem;
-    box-shadow: 1px 1px 10px -4px;
-    border-radius: 2rem;
-}
-.c3{
-    font-size: 1rem;
-    margin-left: 3rem;
-    font-family: cursive;
-    font-weight: 700;
-    padding-bottom: 1rem;
-}
-.c4{
-    /* font-size: 1rem; */
-    font-size: 0.9rem;
-    color: #111;
-    opacity: 60%;
-    width: 7rem;
-    text-align: -webkit-center;
-}
-.itemImage{
-    height: 20rem;
-    background: aliceblue;
-    border-top-left-radius:2rem;
-    border-top-right-radius:2rem;
-}
-.itemName{
-    margin-left: 2rem;
-    font-size: 1.7rem;
-    margin-top: 0.5rem;
-    color: #300;
-    font-family: fangsong;
-    font-weight: 600;
-    text-transform: capitalize;
-    opacity: 82%;
+.title {
+  font-size: 5rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-family: monospace;
+  /* text-decoration: blink; */
+  color: #500;
+  text-shadow: 1px 1px 5px;
 }

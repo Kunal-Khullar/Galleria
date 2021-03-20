@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import './Navbar.css';
@@ -8,9 +9,19 @@ import Button from "react-bootstrap/Button";
 
 import { Animated } from "react-animated-css"
 const NavbarMain = () => {
-    return (<div className="Navbar">
+    const [colorChange, setColorchange] = useState(false);
+    const changeNavbarColor = () => {
+        if (window.scrollY >= 80) {
+            setColorchange(true);
+        }
+        else {
+            setColorchange(false);
+        }
+    };
+    window.addEventListener('scroll', changeNavbarColor);
+    return (<>
 
-        <Navbar fixed="top" id="mainNav" expand="lg">
+        <Navbar fixed="top" id="mainNav" expand="lg" className={colorChange ? 'scroll' : ''}>
             <Navbar.Brand id="navlogo" href="/">
                 Galleria
             </Navbar.Brand>
@@ -47,6 +58,6 @@ const NavbarMain = () => {
             <Col className="imagegif col-md-6"></Col>
         </Row>
 
-    </div>)
+    </>)
 }
-export default NavbarMain;  
+export default NavbarMain;
