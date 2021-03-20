@@ -1,48 +1,50 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Row from 'react-bootstrap/Row'
 import Button from 'react-bootstrap/Button'
 import './Card.css'
 const Card = (props) => {
-    const flipCard = ()=>{
-        var card = document.querySelector('#item1');
+    const flipCard = (id)=>{
+        var card = document.querySelector(id);
         card.classList.toggle('is-flipped');
     }
-    
-
-    console.log(props.data)
+    const [temp,setTemp] = useState(props.data);
+    if(props.data){
+      console.log("ez")
+    }
     return <>
         <div className="row allcards">
-            {props.data.map((ele, i) => {
+            {temp.length!=0&temp.map((ele, i) => {
+                    console.log("hello")
                 return (
-
+                    
                     <div className="cardContainer">
                         <div className="itemcards front">
                             <div className="scene">
-                            <div className="card" id='item1' onClick={flipCard}>
+                            <div className="card" id={ele.id} >
                             <div className="itemImage card__face card__face--front"></div>
                             <div className="back card__face card__face--back"></div>
                             </div>
                             </div>
                             <div className="details">
-                                <h2 className="itemName">{ele.itemName}</h2>
+                                <h2 className="itemName">{ele.title}</h2>
                                 <Row className="r1">
                                     <h2 className="c3">From:</h2>
                                     <h2 className="c4">{ele.shop}</h2>
                                 </Row>
                                 <Row className="r1">
                                     <h2 className="c3">Owner:</h2>
-                                    <h2 className="c4">{ele.owner}</h2>
+                                    <h2 className="c4">{ele.seller}</h2>
                                 </Row>
                                 <Row className="r1">
                                     <h2 className="c3">Contact:</h2>
-                                    <h2 className="c4">{ele.phone}</h2>
+                                    <h2 className="c4">{ele.contact}</h2>
                                 </Row>
                                 <Row className="r1">
                                     <h2 className="c3">Dimensions</h2>
                                     <h2 className="c4">{ele.dimension}</h2>
                                 </Row>
                                 <Row className="r1">
-                                    <h2 className="c3 i1">Rs.3000</h2>
+                                    <h2 className="c3 i1">Rs{ele.price}</h2>
                                     <Button className="mybtn btn-success">Purchase</Button>
                                 </Row>
                             </div>
