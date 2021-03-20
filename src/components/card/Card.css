@@ -31,10 +31,14 @@
   /* font-size: 1rem; */
   font-size: 0.9rem;
   color: #111;
-  opacity: 60%;
+  opacity: 0.67;
   width: 7rem;
   text-align: left;
   margin-left: 3rem;
+}
+.p2{
+  text-align: center;
+  opacity: 0.7;
 }
 .scene {
   border-top-left-radius: 2rem;
@@ -85,7 +89,7 @@
   font-family: fangsong;
   font-weight: 600;
   text-transform: capitalize;
-  opacity: 82%;
+  opacity: 0.8;
 }
 .id1{
   background: beige !important;

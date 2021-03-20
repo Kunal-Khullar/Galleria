@@ -33,6 +33,7 @@ const Furniture = () => {
     return (
         <div className="d1">
             <h1 className="title">Furniture</h1>
+            <p className="p2">Click on the image to reveal QR code.</p>
             <Card data={data} />
         </div>
     )

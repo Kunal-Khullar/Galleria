@@ -31,6 +31,7 @@ const Card = (props) => {
                                     }}></img>) : (<img src={ele.image} style={{
                                         height: "25rem",
                                         width: "100%",
+                                        backgroundRepeat:"no-repeat",
                                         borderTopRightRadius: "2rem",
                                         borderTopLeftRadius: "2rem",
                                     }}></img>)}

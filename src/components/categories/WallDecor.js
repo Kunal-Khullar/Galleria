@@ -34,6 +34,7 @@ const WallDecor = () => {
         <div>
 
             <h1 className="title">Wall Decor</h1>
+            <p className="p2">Click on the image to reveal QR code.</p>
             <Card data={data} />
 
         </div>
