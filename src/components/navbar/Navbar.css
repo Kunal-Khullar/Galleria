@@ -1,0 +1,85 @@
+.navss {
+    margin-right: 6rem !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    font-family: monospace !important;
+    color: #222 !important;
+    transition: color ease-in 600ms !important;
+    transition: background-color 700ms ease-in !important;
+  }
+  .navbar-nav {
+    /* margin-top: 0.5rem; */
+    margin-left: 25rem !important;
+  }
+  #mainNav {
+    margin-top: 0.5rem !important;
+    /* background: #eee !important;  */
+  }
+  .navss:hover {
+    background-color: #666 !important;
+    color: #fff !important;
+  }
+  .imagegif {
+    height: 40rem;
+  
+    background: url("https://cdn.dribbble.com/users/148585/screenshots/5725484/dribbble_4.gif")
+      no-repeat center;
+    /* background-size: cover; */
+  }
+  .headerContainer {
+    justify-content: center;
+    text-align: center;
+  }
+  .headerContainer p {
+    margin-top: 5.5rem;
+  }
+  #header1 {
+    margin-top: 8.5rem;
+    font-family: cursive;
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-left: -1rem;
+  }
+  #p1 span {
+    font-weight: bolder;
+  }
+  .c11 {
+    animation-name: waves;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .c22 {
+    animation-name: waves2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes waves {
+    from {
+      color: #fb3017;
+      opacity: 0.9;
+    }
+    to {
+      color: #111;
+      opacity: 1;
+    }
+  }
+  @keyframes waves2 {
+    from {
+      color: #111;
+      opacity: 1;
+    }
+    to {
+      color: #fb3017;
+      opacity: 0.9;
+    }
+  }
+  #p1 {
+    font-size: 2rem;
+    font-family: monospace;
+    font-weight: 500;
+    padding: 1rem;
+  }
+  
