@@ -4,6 +4,8 @@ import Button from 'react-bootstrap/Button'
 import './Card.css'
 const Card = (props) => {
     const flipCard = (id) => {
+        console.log(id)
+        id = "#" + id
         var card = document.querySelector(id);
         card.classList.toggle('is-flipped');
     }
@@ -18,7 +20,7 @@ const Card = (props) => {
                     <div className="cardContainer">
                         <div className="itemcards front">
                             <div className="scene">
-                                <div className="card" id={ele.id} >
+                                <div className="card" id={ele.id} onClick={() => { flipCard(ele.id) }} >
                                     <div className="itemImage card__face card__face--front"></div>
                                     <div className="back card__face card__face--back"></div>
                                 </div>
