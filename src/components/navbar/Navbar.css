@@ -54,7 +54,7 @@
   animation-direction: alternate;
 }
 .scroll {
-  background-color: #fb3017;
+  background-color: #eee;
   margin-top: 0px;
 }
 @keyframes waves {
@@ -82,4 +82,11 @@
   font-family: monospace;
   font-weight: 500;
   padding: 1rem;
+}
+footer{
+    text-align: center;
+    background: #eee;
+    font-size: 1.2rem;
+    margin-top: 5rem;
+    padding: 3rem;
 }

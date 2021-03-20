@@ -23,10 +23,16 @@ const Card = (props) => {
                                 <div className="card" id={ele.id} onClick={() => { ele.id = flipCard(ele.id); setShowQR(!showQR); }} >
                                     {ele.id == 0 ? (<img src={ele.url} style={{
                                         height: "25rem",
-                                        width: "100%"
+                                        width: "100%",
+                                        borderTopRightRadius: "2rem",
+                                        borderTopLeftRadius: "2rem",
+   
+                                        
                                     }}></img>) : (<img src={ele.image} style={{
                                         height: "25rem",
-                                        width: "100%"
+                                        width: "100%",
+                                        borderTopRightRadius: "2rem",
+                                        borderTopLeftRadius: "2rem",
                                     }}></img>)}
                                     {/* <div style={{
                                         backgroundImage: `url(${ele.image})`,
